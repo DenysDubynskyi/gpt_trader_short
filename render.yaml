@@ -1,5 +1,5 @@
 services:
-  - type: web
+  - type: worker
     name: gpt_trader_short
     env: python
     buildCommand: "pip install -r requirements.txt"
