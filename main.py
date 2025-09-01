@@ -23,7 +23,9 @@ def get_account_info():
     url = f"{base_url}/api/v3/account?{query}&signature={signature}"
     headers = {"X-MEXC-APIKEY": API_KEY}
     resp = requests.get(url, headers=headers)
-    print(resp.status_code, resp.text)
+    print("Status:", resp.status_code)
+    print("Response:", resp.text)
 
 if __name__ == "__main__":
     get_account_info()
+
